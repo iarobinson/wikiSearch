@@ -1,0 +1,71 @@
+h2 {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+input[type=text] {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Thanks to W3Schools for Button CSS
+https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1
+*/
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
