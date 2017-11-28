@@ -9,11 +9,11 @@ $(document).ready(function() {
         type: 'GET',
         async: false,
         dataType: 'json',
-        
         success: function(data) {
-          console.log(data)
-          $('.searchResults').text(data[1][0]);
-          $('.searchResults').text(data[2][0]);
+          $('.searchDisplay').html('');
+          for (var i = 0; i < data[1].length; i += 1) {
+            $('.searchDisplay').prepend("<li><a target= '_blank' href= " + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");            
+          }
         },
         
         error: function(errorMessage) {
