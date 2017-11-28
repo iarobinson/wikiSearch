@@ -30,6 +30,7 @@ input[type=text] {
 /* Thanks to W3Schools for Button CSS
 https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1
 */
+
 button {
   display: inline-block;
   border-radius: 4px;
@@ -51,10 +52,6 @@ a {
 /*Table Styling*/
 
 th, td {
-  padding: 15px;
+  padding: 10px;
   text-align: left;
-}
-
-tr:hover {
-  background-color: #999999;
 }
