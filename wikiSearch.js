@@ -11,7 +11,7 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
           $('.searchDisplay').html('');
-          for (var i = 0; i < data[1].length; i += 1) {
+          for (var i = data[1].length; i >= 0; i -= 1) {
             $('.searchDisplay').prepend("<li><a target= '_blank' href= " + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");            
           }
         },
