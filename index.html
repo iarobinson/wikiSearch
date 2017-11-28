@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ian's Wikipedia Search Tool</title>
+  <title>Ian's Wikipedia Search Tool - Quick Check</title>
   <meta name="description" content="A tool for searching Wikipedia built as a way to learn the wiki API">
   <link rel='stylesheet' href='wikiSearch.css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,16 +10,17 @@
 
 <body>
   <center>
-    <h2>Search Wikipedia</h2>
+    <h2>Quick Check</h2>
     <div>
       <input class="input" type="text"></input>
     </div>
     <span>
       <button class="button search" style="vertical-align:middle">Search</button>
-      <a href="https://en.wikipedia.org/wiki/Special:Random"><button class="button random" style="vertical-align:middle">Random</button></a>
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><button class="button random" style="vertical-align:middle">Random</button></a>
     </span>
-    <p class='searchDisplay'></p>
-    <p class="searchResults"></p>
+    <table style = "width:60%" class="w3-table-all w3-hoverable"> 
+      <p class='searchDisplay'>
+    </table>
   </center>
 </body>
 <script>
